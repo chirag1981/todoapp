@@ -1,4 +1,110 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
+/* Center the entire content */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full viewport height */
+    text-align: center;
+}
+
+/* Center the form */
+.form {
+    display: flex;  /* Enables flexbox */
+    justify-content: center;  /* Centers the form horizontally */
+    margin-top: 20px;
+}
+
+.form form {
+    display: flex;  /* Aligns input and button in a row */
+    gap: 10px;  /* Adds space between input and button */
+}
+
+.form input[type="text"],
+.form input[type="submit"] {
+    height: 40px;  /* Ensures both elements have the same height */
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.form input[type="text"] {
+    width: 850px; /* Adjust width as needed */
+}
+
+.form input[type="submit"] {
+    background-color: #007BFF; /* Bootstrap blue */
+    color: white;
+    
+    border-radius: 8px; /* Rounded corners */
+    
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100px; /* Adjust width for a compact button */
+}
+.form input[type="text"]:focus {
+    outline: none;
+    border-color: #0056b3;  /* Darker blue on focus */
+    background-color: white;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Style input field */
+input[type="text"] {
+    width: 800px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style table */
+table {
+    margin-top: 20px;
+    width: 80%;
+    border: 2px solid #007BFF;
+    
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Style links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
